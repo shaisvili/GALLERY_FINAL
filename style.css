@@ -167,7 +167,7 @@ i {
   .main_container {
 
     align-content: center;
-    height: 450vh;
+    height: auto;
     background-image: url(./back_main.jpg);
     position: relative;
     top: 10%;
@@ -509,7 +509,6 @@ width: 150vw;
 
 
   .ABOUT_US_container {
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -518,7 +517,7 @@ width: 150vw;
 
 
 .text_about {
-  padding-top: 2.3%;
+  
 padding-left: 15%;
 padding-right: 15%;
 position: relative;
