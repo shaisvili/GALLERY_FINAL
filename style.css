@@ -1,0 +1,854 @@
+/* reset styles - DON'T TUCH !*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+ 
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+   
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    font-weight: bolder;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*
+    10. Create a root font size to 10 pixels
+  */
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+/* fonts styles - FOR THE FONTS FOR ELEMENTS IN THE DOCUMENT */
+
+
+    /* styles */
+
+
+/* --------------------------------------------------- */
+
+
+
+/* global styles - FOR THINGS THAT COMMON TO ALL DEVICES */
+
+header {
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+}
+
+nav {
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav-links {
+  padding-right: 3%;
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2.5vw;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  padding: 0.1em;
+}
+
+
+
+nav span {
+  font-size: 2vw;
+  margin-top: 0.8rem;
+  position: relative;
+  left: 1rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  place-content: center;
+  place-items: center;
+  letter-spacing: 0.1em;
+}
+
+i {
+  font-size: 4vw;
+  position: relative;
+  left: 0.7rem;
+  margin-top: 0.6rem;
+}
+
+  /* main----------------------------------------- */
+
+  .main_container {
+
+    align-content: center;
+    height: 450vh;
+    background-image: url(./back_main.jpg);
+    position: relative;
+    top: 10%;
+    text-align: center;
+  }
+  
+  #svgwrapper {
+    display:inline-block;
+    width:15vw;
+    height:15vh;
+    stroke: white;
+    fill: none;
+    position: relative;
+    bottom: 46vh;
+  }
+  
+  .logo-path {
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      top: calc(20% + 20px);
+  }
+  
+  .logo-path {
+      stroke-dasharray: 2600;
+      stroke-dashoffset: 2600;
+  }
+  
+  .underline {
+      stroke-width: 20;
+      animation: letter-animation 5s linear forwards;
+      animation-delay: 5.1s;
+  }
+  
+  .i-2 { /* Mar(i)na */
+      stroke-width: 12;
+      animation: letter-animation 15s linear forwards;
+      animation-delay: 4.8s;
+  }
+  
+  .aa-2 { /* Marin(a) */
+      stroke-width: 30;
+      animation: letter-animation 10s linear forwards;
+      animation-delay: 4.25s;
+  }
+  
+  .aa-1 { /* Marin(a) */
+      stroke-width: 10;
+      animation: letter-animation 8s linear forwards;
+      animation-delay: 4s;
+  }
+  
+  .n-2 { /* Mari(n)a */
+      stroke-width: 15;
+      animation: letter-animation 10s linear forwards;
+      animation-delay: 3.5s;
+  }
+  
+  .n-1 { /* Mari(n)a */
+      stroke-width: 10;
+      animation: letter-animation 8s linear forwards;
+      animation-delay: 3.3s;
+  }
+  
+  .i-1 { /* Mar(i)na */
+      stroke-width: 9;
+      animation: letter-animation 8s linear forwards;
+      animation-delay: 3s;
+  }
+  
+  .r-2 { /* Ma(r)ina */
+      stroke-width: 12;
+      animation: letter-animation 8s linear forwards;
+      animation-delay: 2.7s;
+  }
+  
+  .r-1 { /* Ma(r)ina */
+      stroke-width: 9;
+      animation: letter-animation 8s linear forwards;
+      animation-delay: 2.45s;
+  }
+  
+  .a-2 { /* M(a)rina */
+      stroke-width: 8;
+      animation: letter-animation 8s linear forwards;
+      animation-delay: 2.25s;
+  }
+  
+  .a-1 { /* M(a)rina */
+      stroke-width: 10;
+      animation: letter-animation 8s linear forwards;
+      animation-delay: 2s;
+  }
+  
+  .M-3 { /* (M)arina */
+      stroke-width: 20;
+      animation: letter-animation 5s linear forwards;
+      animation-delay: 1.53s;
+  }
+  
+  .M-2 { /* (M)arina */
+      stroke-width: 20;
+      animation: letter-animation 5s linear forwards;
+      animation-delay: 1.05s;
+  }
+  
+  .M-1 { /* (M)arina */
+      stroke-width: 18;
+      animation: letter-animation 5s linear forwards;
+  }
+  
+  @keyframes letter-animation {
+      0% {
+          stroke-dashoffset: 2600;
+      }
+      100% {
+          stroke-dashoffset: 0;
+      }
+  }
+  .opentext {
+  
+    text-align: center;
+    position: relative;
+    top: 7vh;
+  }
+
+.div1 {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.div1:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+.div1:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.div1:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+  h1 {
+    
+    word-spacing: 150%;
+    font-size: 4em;
+    font-weight: bolder;
+  
+  }
+
+ h2 {
+  
+  word-spacing: 10%;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-size: 3em;
+ }
+
+
+#zed_img {
+
+width: 150vw;
+    height: 77vh;
+
+}
+
+  .text_main {
+    position: relative;
+    bottom: 69vh ;
+   text-align: center;
+   text-transform: capitalize;
+   font-size: large;
+   font-weight: bolder;
+   color: whitesmoke;
+   z-index: 10;
+  }
+
+
+
+  .img_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .button {
+    background-image: url(./space-background-telescope-silhouette-NASA-image-elements.webp);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #346edb;
+  }
+  
+  button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+    color: rgba(255,255,255,0.5);
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+    background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+    background-size: 150%;
+    background-position: right;
+    transition: 1s;
+  }
+  
+  button:hover {
+    background-position: left;
+    color: white;
+    box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  
+  .container {
+    position : relative;
+    max-width: 100%;
+    height: auto;
+    width : auto;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+  flex-wrap: wrap;
+    padding : 30px;  
+  }
+  
+  .container .card {
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-image:url(./pic_back.jpg);
+    margin : 30px 10px;
+    padding : 20px 15px;
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+  }
+  .container .card:hover {
+    height : 320px;    
+  }
+  
+  
+  .container .card .image {
+    position : relative;
+    width : 260px;
+    height : 260px;
+    
+    top : -40%;
+    
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .container .card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .container .card .content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .container .card:hover .content {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }
+
+  #image_g {
+    width: 300px;
+    height: 200px;
+
+  }
+
+
+
+  .ABOUT_US_container {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 33vw;
+  }
+
+
+.text_about {
+  padding-top: 2.3%;
+padding-left: 15%;
+padding-right: 15%;
+position: relative;
+bottom: 4%;
+text-align: center;
+border: 2px solid rgba(36, 125, 72, 0.111);
+text-transform: capitalize;
+font-size: large;
+letter-spacing: 0.2em;
+font-weight: bolder;
+color: whitesmoke;
+opacity: 0.9;
+background-image: url(./space-background-telescope-silhouette-NASA-image-elements.webp);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow:
+1.4px 2.8px 4.6px -6px rgba(0, 0, 0, 0.066),
+-1.9px -4.1px 9px -6px rgba(0, 0, 0, 0.08),
+-5.3px -11px 13.4px -6px rgba(0, 0, 0, 0.085),
+-7.3px -15.3px 18.2px -6px rgba(0, 0, 0, 0.089),
+-7px -14.6px 24px -6px rgba(0, 0, 0, 0.097),
+-2.5px -5.2px 32.1px -6px rgba(0, 0, 0, 0.111),
+10.5px 21.9px 45.7px -6px rgba(0, 0, 0, 0.142),
+76px 159px 80px -6px rgba(0, 0, 0, 0.22)
+;
+}
+
+
+/* --------------------------------------------------- */
+
+ 
+
+/* _____________________________________________________MEDIA_QUERY_________________________________________________ */
+
+/* portrait mobile */
+@media (max-width: 47.9rem) and (orientation: portrait) {
+    /* styles */
+.div1 , #svgwrapper , .load-logo {
+  display: none;
+}
+
+    header {
+      width: 100vw;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 25;
+    }
+    
+    nav {
+      display: flex;
+      padding: 0.5rem 0.5rem;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .nav-links {
+      flex: 1;
+      text-align: right;
+    }
+    
+    .nav-links ul li {
+      display: inline-block;
+      padding: 0.4rem;
+      margin-top: 0.3rem;
+    }
+    
+    .nav-links ul li a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 4.5vw;
+      text-transform: capitalize;
+      letter-spacing: 0.1em;
+      padding: 0.1em;
+    }
+    
+    nav span {
+      font-size: 4vw;
+      margin-top: 0.8rem;
+      position: relative;
+      left: 1rem;
+      text-transform: uppercase;
+      color: whitesmoke;
+      place-content: center;
+      place-items: center;
+      letter-spacing: 0.1em;
+    }
+    
+    i {
+      font-size: 8vw;
+      position: relative;
+      left: 0.7rem;
+      margin-top: 0.6rem;
+    }
+    
+      /* main----------------------------------------- */
+    
+      .main_container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: 1000vh;
+        background-image: url(./back_main.jpg);
+        position: relative;
+        top: 10%;
+        text-align: center;
+      }
+    
+    
+      .opentext {
+      
+        text-align: center;
+        position: relative;
+        top: 7vh;
+    
+      }
+    
+    
+      
+      h1 {
+        word-spacing: 2%;
+        font-size: xx-large;
+        font-weight: bolder;
+      
+      }
+    
+     h2 {
+      word-spacing: 5%;
+      font-size: xx-large;
+      font-weight: bolder;
+     }
+    
+    
+    #zed_img {
+    height: auto;
+    width: 150vw;
+        height: 40vh;
+    
+    }
+    
+      .text_main {
+        
+        position: relative;
+        bottom: 33vh ;
+       text-align: center;
+       text-transform: capitalize;
+       font-size: large;
+       font-weight: bolder;
+       color: whitesmoke;
+       z-index: 10;
+      }
+    
+      .img_main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    
+      a{
+        text-decoration: none;
+        color: white;
+      }
+
+    
+      .button {
+        background-color: #412ad9; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    
+      .container {
+        position : relative;
+        max-width: 100%;
+        height: auto;
+        width : 1100px;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+      flex-wrap: wrap;
+        padding : 30px;  
+      }
+      
+      .container .card {
+        position: relative;
+        max-width : 300px;
+        height : 215px;  
+        background-image:url(./pic_back.jpg);
+        margin : 30px 10px;
+        padding : 20px 15px;
+        display : flex;
+        flex-direction : column;
+        box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+        transition : 0.3s ease-in-out;
+        border-radius : 15px;
+      }
+      .container .card:hover {
+        height : 320px;    
+      }
+      
+      
+      .container .card .image {
+        position : relative;
+        width : 260px;
+        height : 260px;
+        
+        top : -40%;
+        
+        box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+        z-index : 1;
+      }
+      
+      .container .card .image img {
+        max-width : 100%;
+        border-radius : 15px;
+      }
+      
+      .container .card .content {
+        position : relative;
+        top : -140px;
+        padding : 10px 15px;
+        color : #111;
+        text-align : center;
+        
+        visibility : hidden;
+        opacity : 0;
+        transition : 0.3s ease-in-out;
+          
+      }
+      
+      .container .card:hover .content {
+         margin-top : 30px;
+         visibility : visible;
+         opacity : 1;
+         transition-delay: 0.2s;
+        
+      }
+    
+      #image_g {
+        width: 300px;
+        height: 200px;
+    
+      }
+    
+      .ABOUT_US_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    
+    
+    .text_about {
+    padding-left: 4%;
+    padding-right: 4%;
+    position: relative;
+    bottom: 4%;
+    text-align: center;
+    border: 2px solid rgba(36, 125, 72, 0.111);
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: bolder;
+    color: whitesmoke;
+    opacity: 0.9;
+    background-image: url(./space-background-telescope-silhouette-NASA-image-elements.webp);
+    box-shadow:
+    1.4px 2.8px 4.6px -6px rgba(0, 0, 0, 0.066),
+    -1.9px -4.1px 9px -6px rgba(0, 0, 0, 0.08),
+    -5.3px -11px 13.4px -6px rgba(0, 0, 0, 0.085),
+    -7.3px -15.3px 18.2px -6px rgba(0, 0, 0, 0.089),
+    -7px -14.6px 24px -6px rgba(0, 0, 0, 0.097),
+    -2.5px -5.2px 32.1px -6px rgba(0, 0, 0, 0.111),
+    10.5px 21.9px 45.7px -6px rgba(0, 0, 0, 0.142),
+    76px 159px 80px -6px rgba(0, 0, 0, 0.22)
+    ;
+    }
+    
+
+}
+
+
+/* ________________ */
+
+
+/* landscape mobile */
+@media (max-width: 94rem) and (orientation: landscape) {
+  #svgwrapper , .load-logo {
+    display: none;
+  }
+}
+
+/* ________________ */
+
+
+/* portrait tablets */
+@media (min-width: 48rem) and (max-width: 102.5rem) and (orientation: portrait) {
+ #svgwrapper , .load-logo {
+    display: none;
+  }
+   
+}
+
+/* ________________ */
+
+
+/* landscape tablet & part of pc / leptop screens */
+
+@media (min-width: 94.1rem) and (max-width: 142.5rem) and (orientation: landscape) {
+    /* styles */
+}
+
+/* ______________________________________________ */
+
+
+/* rest of all pc / leptop screens */
+
+@media (min-width: 142.6rem) {
+    /* styles */
+   
+  
+  
+}
+
+/* ________________________________ */
+
+
